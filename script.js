@@ -4,7 +4,7 @@ for(i = 0; i < wh*wh; i++){
     let box = document.createElement('div');
     box.classList.add("gridBoxes");
     box.addEventListener("mouseover", function(event){
-        event.target.style.color = "black";
+        box.classList.add("touchedBox");
     });
     gridContainer.appendChild(box);
 }
