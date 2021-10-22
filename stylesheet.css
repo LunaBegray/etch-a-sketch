@@ -4,6 +4,7 @@
     height: 960px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 70px;
 }
 .gridBoxes{
     background-color:white;
@@ -11,5 +12,8 @@
     height:60px;
 }
 .gridBoxes:hover{
+    background-color:black;
+}
+.touchedBox{
     background-color:black;
 }
