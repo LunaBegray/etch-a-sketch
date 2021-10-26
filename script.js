@@ -9,9 +9,9 @@ for(i = 0; i < wh*wh; i++){
     gridContainer.appendChild(box);
 }
 let btn = document.querySelector('.btn');
-let touchedBoxes = document.querySelectorAll('.touchedBox');
 let allBoxes = document.querySelectorAll('.gridBoxes');
 btn.addEventListener("click", () => {
+    let touchedBoxes = document.querySelectorAll('.touchedBox');
     for(i=0;i < touchedBoxes.length; i++){
         touchedBoxes[i].classList.remove('touchedBox');
     }
