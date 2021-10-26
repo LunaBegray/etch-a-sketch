@@ -12,7 +12,7 @@ let btn = document.querySelector('.btn');
 let touchedBoxes = document.querySelector('.touchedBox')
 let allBoxes = document.querySelector('.gridBoxes');
 btn.addEventListener("click", () => {
-    for(i=0;i < wh*wh; i++){
-        allBoxes[i].classList.remove('touchedBox')
+    for(i=0;i < touchedBoxes.length; i++){
+        touchedBoxes[i].classList.remove('touchedBox')
     }
 });
