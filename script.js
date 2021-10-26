@@ -8,3 +8,7 @@ for(i = 0; i < wh*wh; i++){
     });
     gridContainer.appendChild(box);
 }
+let btn = document.querySelector('.btn');
+btn.addEventListener("click", () => {
+    box.classList.remove("touchedBox");
+});
