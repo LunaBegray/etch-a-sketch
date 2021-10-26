@@ -9,7 +9,7 @@ for(i = 0; i < wh*wh; i++){
     gridContainer.appendChild(box);
 }
 let btn = document.querySelector('.btn');
-let allBoxes = document.querySelector('gridBoxes');
+let allBoxes = document.querySelector('.gridBoxes');
 btn.addEventListener("click", () => {
     for(i=0; i < wh*wh; i++)
         allBoxes[i].classList.remove("touchedBox");
