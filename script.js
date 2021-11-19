@@ -21,9 +21,12 @@ btn.addEventListener("click", () => {
     if(wh > 100){
         wh = 100
     }
+    let newSize = 960/wh
     for(let i = 0; i < wh*wh; i++){
         let box = document.createElement('div');
         box.classList.add("gridBoxes");
+        box.style.width = newSize + "px";
+        box.style.height = newSize + "px"
         box.addEventListener("mouseover", function(event){
             box.classList.add("touchedBox");
         });
